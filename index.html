@@ -11,9 +11,13 @@
         <h1>Formulario Modelo Reclamación de Cantidades por Productividad</h1>
     </div>
     <div class="formulario">
-        <form class="form-horizontal" id="form1" action="modelo.html" method="GET">
+                <div class="clases">
+                <button id="c1" class="seleccion">Régimen General</button>
+                <button id="c2" class="seleccion">Régimen Especial</button>
+                </div><p></p>
+        <form class="form-horizontal" id="form1" action="modelo1.html" method="GET" style="display: none">
         <fieldset>
-            <legend>Reclamación de Productividad</legend>
+            <legend>Reclamación de Productividad Régimen General</legend>
             <table>
                 <tbody>
                     <tr>
@@ -47,7 +51,7 @@
                         <td><div class="form-group">   <label class="col-md-4 control-label" for="trienio">Trienios</label> </div></td>
                         <td><div class="col-md-6">   <input id="trienio" name="trienio" type="text" placeholder="Cantidad que cobra por trienio" class="form-control input-md">   </div></td>
 
-<td><div class="form-group">   <label class="col-md-4 control-label" for="cobro">Cantidad cobrada por productividad</label> </div></td>
+                        <td><div class="form-group">   <label class="col-md-4 control-label" for="cobro">Cantidad cobrada por productividad</label> </div></td>
                         <td><div class="col-md-6">   <input id="cobro" name="cobro" type="text" placeholder="Lo que percibió por productividad" class="form-control input-md">   </div></td>
                     </tr>
                 </tbody>
@@ -59,7 +63,56 @@
         <input type="submit" value="Crear Modelo">
         <input type="reset" value="Limpiar Campos">
         </form>
-        <p><em>Quienes presten sus servicios en Juzgados y Tribunales de <strong>Canarias</strong>, <strong>Pais Vasco</strong>, <strong>Navarra</strong>, <strong>Baleares</strong>, <strong>Ceuta</strong> y <strong>Melilla</strong> tienen en su Complemento de Destino una serie de pluses no diferenciados y que difieren a la hora de calcular las retribuciones fijas anuales, por lo que la diferencia resultante del presente formulario puede ser mayor.</em></p>
+        <form class="form-horizontal" id="form2" action="modelo2.html" method="GET" style="display: none">
+        <fieldset>
+            <legend>Reclamación de Productividad Régimen Especial</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><div class="form-group"><label class="col-md-4 control-label" for="nombre">Nombre</label></div>
+                        </td><td><div class="col-md-6"><input id="nombre" name="nombre" type="text" placeholder="Nombre del Juez o Magistrado" class="form-control input-md" required=""></div></td>
+
+                        <td><div class="form-group">  <label class="col-md-4 control-label" for="destino">Juzgado o Tribunal de destino</label> </div></td>
+                        <td><div class="col-md-6"> <input id="destino" name="destino" type="text" placeholder="Juzgado o Tribunal de destino" class="form-control input-md">   </div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="form-group">   <label class="col-md-4 control-label" for="categoria">Categoría</label> </div></td>
+                        <td> <div class="col-md-6">     <select id="categoria" name="categoria" class="form-control">  <option value="Magistrado">Magistrado</option>  <option value="Juez">Juez</option> </select>  </div></td>
+                        <td><div class="form-group">   <label class="col-md-4 control-label" for="pex">PEx.Jun.Anx.Ley51/07PGE</label> </div></td>
+                        <td><div class="col-md-6">   <input id="pex" name="pex" type="text" placeholder="Nómina Junio 2020" class="form-control input-md">   </div></td>
+
+                    </tr>
+                    <tr>
+                        <td><div class="form-group">   <label class="col-md-4 control-label" for="dni">DNI</label> </div></td>
+                        <td><div class="col-md-6">   <input id="dni" name="dni" type="text" placeholder="DNI del solicitante" class="form-control input-md">   </div></td>
+
+                        <td><div class="form-group">   <label class="col-md-4 control-label" for="domicilio">Domicilio para notificación</label></div></td>
+                        <td><div class="col-md-6">   <input id="domicilio" name="domicilio" type="text" placeholder="Domicilio a efectos de notificación" class="form-control input-md">   </div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="form-group">   <label class="col-md-4 control-label" for="salariobase">Salario Base</label> </div></td>
+                        <td><div class="col-md-6">   <input id="salariobase" name="salariobase" type="text" placeholder="Salario Base según nóminas" class="form-control input-md">   </div></td>
+
+                        <td><div class="form-group">   <label class="col-md-4 control-label" for="compdest">Complemento de Destino</label> </div></td>
+                        <td><div class="col-md-6">   <input id="compdest" name="compdest" type="text" placeholder="Complemento según nómina" class="form-control input-md">   </div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="form-group">   <label class="col-md-4 control-label" for="trienio">Trienios</label> </div></td>
+                        <td><div class="col-md-6">   <input id="trienio" name="trienio" type="text" placeholder="Cantidad que cobra por trienio" class="form-control input-md">   </div></td>
+
+                        <td><div class="form-group">   <label class="col-md-4 control-label" for="cobro">Cantidad cobrada por productividad</label> </div></td>
+                        <td><div class="col-md-6">   <input id="cobro" name="cobro" type="text" placeholder="Lo que percibió por productividad" class="form-control input-md">   </div></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </fieldset>
+        <br>
+        <p>
+        <input type="submit" value="Crear Modelo">
+        <input type="reset" value="Limpiar Campos">
+        </form>
+        <p><em>Quienes presten sus servicios en Juzgados y Tribunales de <strong>Canarias</strong>, <strong>Pais Vasco</strong>, <strong>Navarra</strong>, <strong>Baleares</strong>, <strong>Ceuta</strong> y <strong>Melilla</strong> son de <strong>Régimen Especial</strong> y por ende habrán de rellenar el campo PEx.Jun.Anx.Ley51/07PGE, concepto que aparece en la nómina de Junio de 2020. Los que no presten servicio en estas comunidades, son de Régimen General</em></p>
     </div>
 </body>
 </html>
