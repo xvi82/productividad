@@ -48,8 +48,9 @@ const productividadtrimestral = productividadanual/4;
 
 const diferenciaentera = productividadtrimestral-newcobro;
 
-const diferencia = redondeo(diferenciaentera).toString().replace(".", ",");
+const diferencial = redondeo(diferenciaentera).toString().replace(".", ",");
 
+const diferencia = redondeo(((((newtrienio+newsalariobase+newcompdest)*14)/20)/4)-newcobro).toString().replace(".", ",");
 
 
 // La frase contiene HTML y texto que se pondrá en la página del resultado
