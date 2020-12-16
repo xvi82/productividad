@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="index.js" defer></script>
+    <link rel="stylesheet" href="index.css">
+    <title>Formulario Modelo Reclamación de Cantidades por Productividad</title>
+</head>
+<body>
+    <div class="titulo">
+        <h1>Formulario Modelo Reclamación de Cantidades por Productividad</h1>
+    </div>
+    <div class="formulario">
+        <form class="form-horizontal" id="form1" action="modelo.html" method="GET">
+        <fieldset>
+            <legend>Reclamación de Productividad</legend>
+            <table>
+                <tbody>
+                    <tr>
+                        <td><div class="form-group"><label class="col-md-4 control-label" for="nombre">Nombre</label></div>
+                        </td><td><div class="col-md-6"><input id="nombre" name="nombre" type="text" placeholder="Nombre del Juez o Magistrado" class="form-control input-md" required=""></div></td>
+
+                        <td><div class="form-group">  <label class="col-md-4 control-label" for="destino">Juzgado o Tribunal de destino</label> </div></td>
+                        <td><div class="col-md-6"> <input id="destino" name="destino" type="text" placeholder="Juzgado o Tribunal de destino" class="form-control input-md">   </div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="form-group">   <label class="col-md-4 control-label" for="categoria">Categoría</label> </div></td>
+                        <td> <div class="col-md-6">     <select id="categoria" name="categoria" class="form-control">  <option value="Magistrado">Magistrado</option>  <option value="Juez">Juez</option> </select>  </div></td>
+
+
+                    </tr>
+                    <tr>
+                        <td><div class="form-group">   <label class="col-md-4 control-label" for="dni">DNI</label> </div></td>
+                        <td><div class="col-md-6">   <input id="dni" name="dni" type="text" placeholder="DNI del solicitante" class="form-control input-md">   </div></td>
+
+                        <td><div class="form-group">   <label class="col-md-4 control-label" for="domicilio">Domicilio para notificación</label></div></td>
+                        <td><div class="col-md-6">   <input id="domicilio" name="domicilio" type="text" placeholder="Domicilio a efectos de notificación" class="form-control input-md">   </div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="form-group">   <label class="col-md-4 control-label" for="salariobase">Salario Base</label> </div></td>
+                        <td><div class="col-md-6">   <input id="salariobase" name="salariobase" type="text" placeholder="Salario Base según nóminas" class="form-control input-md">   </div></td>
+
+                        <td><div class="form-group">   <label class="col-md-4 control-label" for="compdest">Complemento de Destino</label> </div></td>
+                        <td><div class="col-md-6">   <input id="compdest" name="compdest" type="text" placeholder="Complemento según nómina" class="form-control input-md">   </div></td>
+                    </tr>
+                    <tr>
+                        <td><div class="form-group">   <label class="col-md-4 control-label" for="trienio">Trienios</label> </div></td>
+                        <td><div class="col-md-6">   <input id="trienio" name="trienio" type="text" placeholder="Cantidad que cobra por trienio" class="form-control input-md">   </div></td>
+
+<td><div class="form-group">   <label class="col-md-4 control-label" for="cobro">Cantidad cobrada por productividad</label> </div></td>
+                        <td><div class="col-md-6">   <input id="cobro" name="cobro" type="text" placeholder="Lo que percibió por productividad" class="form-control input-md">   </div></td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+        <br>
+        <p>
+        <input type="submit" value="Crear Modelo">
+        <input type="reset" value="Limpiar Campos">
+        </form>
+    </div>
+</body>
+</html>
